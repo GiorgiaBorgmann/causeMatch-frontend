@@ -1,0 +1,45 @@
+.container-control-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #F1F4FF;
+}
+
+.container-control-panel label{
+    color: #7B7B86;
+}
+
+.container-control-panel h1{
+    color: #7B7B86;
+    font-weight: 300;
+}
+
+.container-control-panel input{
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    padding: 4px 10px;
+}
+
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+.container-control-panel button{
+    margin: 20px 0;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5c7da1;
+    color: #F1F4FF;
+}
+
+.container-control-panel button:hover{
+    
+    background-color: #79aadf;
+    color:#F1F4FF;
+}
