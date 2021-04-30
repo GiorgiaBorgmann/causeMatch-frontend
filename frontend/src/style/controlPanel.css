@@ -4,6 +4,7 @@
     align-items: center;
     flex-flow: column;
     background-color: #F1F4FF;
+    width: 100%;
 }
 
 .container-control-panel label{
@@ -25,7 +26,7 @@
 .container-input{
     display: flex;
     justify-content: space-between;
-    width: 380px;
+    width: 430px;
     margin-bottom: 10px;
 }
 

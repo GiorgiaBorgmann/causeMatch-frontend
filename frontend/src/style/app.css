@@ -1,0 +1,11 @@
+.App{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100vw;
+}
+.App h1{
+    color:#7B7B86;
+    font-weight: 300;
+    font-size: 45px;
+}

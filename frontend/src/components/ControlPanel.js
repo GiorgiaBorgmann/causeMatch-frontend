@@ -4,7 +4,7 @@ import { addDonor } from '../actions'
 import '../style/controlPanel.css'
 
 export default function ControlPanel() {
-    const [donor, setDonor] = useState({ id: new Date(), name: 'Baruch Cohen', amount: '100', comment: '' })
+    const [donor, setDonor] = useState({ id: new Date(), name: 'Baruch Cohen', amount: '100', donationThrough: '' })
     const dispatch = useDispatch()
     const handleAddDonor = () => {
         setDonor({ ...donor, id: new Date() })
@@ -22,8 +22,8 @@ export default function ControlPanel() {
                 <input type='number' value={donor.amount} required onChange={(e) => setDonor({ ...donor, amount: e.target.value })} />
             </div>
             <div className='container-input'>
-                <label>Comment</label>
-                <input type='text' value={donor.comment} onChange={(e) => setDonor({ ...donor, comment: e.target.value })} />
+                <label>Donation through</label>
+                <input type='text' value={donor.donationThrough} onChange={(e) => setDonor({ ...donor, donationThrough: e.target.value })} />
             </div>
             <button onClick={handleAddDonor}>Add Donor</button>
         </div>
