@@ -12,7 +12,7 @@ export default function ControlPanel() {
     }
     return (
         <div className='container-control-panel'>
-            <h1>Add new doner</h1>
+            <h1>Add new donor</h1>
             <div className='container-input'>
                 <label>Full Name</label>
                 <input type='text' value={donor.name} required onChange={(e) => setDonor({ ...donor, name: e.target.value })} />
