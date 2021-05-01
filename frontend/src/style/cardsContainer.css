@@ -5,3 +5,10 @@
     flex-wrap: wrap;
 
 }
+.container-select{
+    width: 100vw;
+    margin-top: 30px;
+}
+.container-select select{
+    margin-left: 100px;
+}

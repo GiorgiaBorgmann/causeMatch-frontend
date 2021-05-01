@@ -4,10 +4,9 @@ import { addDonor } from '../actions'
 import '../style/controlPanel.css'
 
 export default function ControlPanel() {
-    const [donor, setDonor] = useState({ id: new Date(), name: 'Baruch Cohen', amount: '100', donationThrough: '' })
+    const [donor, setDonor] = useState({ name: 'Baruch Cohen', amount: '100', donationThrough: '' })
     const dispatch = useDispatch()
     const handleAddDonor = () => {
-        setDonor({ ...donor, id: new Date() })
         dispatch(addDonor(donor))
     }
     return (
